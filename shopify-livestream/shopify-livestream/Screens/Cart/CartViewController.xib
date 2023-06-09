@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartViewController" customModule="shopify_livestream" customModuleProvider="target">
+            <connections>
+                <outlet property="stackView" destination="NOt-1o-VrR" id="OWB-rA-UOu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UCR-95-Qpe">
+                    <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggm-Jm-cAI">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NOt-1o-VrR">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="NOt-1o-VrR" secondAttribute="bottom" id="Eqc-aa-8rt"/>
+                                <constraint firstItem="NOt-1o-VrR" firstAttribute="top" secondItem="Ggm-Jm-cAI" secondAttribute="top" id="Prm-1J-v5D"/>
+                                <constraint firstItem="NOt-1o-VrR" firstAttribute="leading" secondItem="Ggm-Jm-cAI" secondAttribute="leading" id="T3u-lE-wV5"/>
+                                <constraint firstAttribute="trailing" secondItem="NOt-1o-VrR" secondAttribute="trailing" id="bmx-4s-OQa"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Ggm-Jm-cAI" secondAttribute="bottom" id="Ors-Tm-DYd"/>
+                        <constraint firstItem="Ggm-Jm-cAI" firstAttribute="top" secondItem="UCR-95-Qpe" secondAttribute="top" id="Yfn-95-mrw"/>
+                        <constraint firstItem="Ggm-Jm-cAI" firstAttribute="leading" secondItem="UCR-95-Qpe" secondAttribute="leading" id="iKu-k5-MNd"/>
+                        <constraint firstAttribute="trailing" secondItem="Ggm-Jm-cAI" secondAttribute="trailing" id="sCl-8w-FsO"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR7-rN-JoR">
+                    <rect key="frame" x="20" y="812" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.1137254902" green="0.2784313725" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6B8-0P-pMt"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Proceed to checkout">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusX">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="checkoutAction:" destination="-1" eventType="touchUpInside" id="F0K-L7-y2i"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ggm-Jm-cAI" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="0yb-hM-SAR"/>
+                <constraint firstItem="Ggm-Jm-cAI" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="250" id="3e2-74-8Gz"/>
+                <constraint firstItem="GR7-rN-JoR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="EqZ-oS-LOo"/>
+                <constraint firstItem="UCR-95-Qpe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GN4-5J-Krg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UCR-95-Qpe" secondAttribute="bottom" constant="50" id="H4p-N3-YNF"/>
+                <constraint firstItem="GR7-rN-JoR" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="IdR-5X-UAv"/>
+                <constraint firstItem="UCR-95-Qpe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KZv-Hr-gxw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GR7-rN-JoR" secondAttribute="trailing" constant="20" id="MQj-nz-8hG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UCR-95-Qpe" secondAttribute="trailing" id="RWa-yx-95X"/>
+                <constraint firstItem="GR7-rN-JoR" firstAttribute="top" secondItem="UCR-95-Qpe" secondAttribute="bottom" id="wIZ-Hz-3cE"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

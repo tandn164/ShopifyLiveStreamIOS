@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderView" customModule="shopify_livestream_user" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="is9-XA-xc6"/>
+                <outlet property="name" destination="T8J-qc-CA0" id="UPV-OP-Gwt"/>
+                <outlet property="price" destination="ZCa-bb-dSZ" id="3gW-V9-TfX"/>
+                <outlet property="quantity" destination="nCS-8J-RZp" id="n1Y-r9-6Pw"/>
+                <outlet property="thumbnail" destination="bc4-9u-4Qt" id="BqT-wb-9m2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="135"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bc4-9u-4Qt">
+                    <rect key="frame" x="15" y="15" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="1Xh-JD-Axm"/>
+                        <constraint firstAttribute="height" constant="100" id="rW4-hX-Fxj"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="woq-ZA-X6A">
+                    <rect key="frame" x="130" y="15" width="304" height="76.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8J-qc-CA0">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCS-8J-RZp">
+                            <rect key="frame" x="0.0" y="30.5" width="304" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCa-bb-dSZ">
+                            <rect key="frame" x="0.0" y="58.5" width="304" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="woq-ZA-X6A" secondAttribute="trailing" constant="15" id="Dz1-GN-dSw"/>
+                <constraint firstItem="bc4-9u-4Qt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="FAF-vf-Wq3"/>
+                <constraint firstItem="bc4-9u-4Qt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="QHu-w9-Ubz"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="woq-ZA-X6A" secondAttribute="bottom" constant="15" id="SUI-3N-8f9"/>
+                <constraint firstItem="woq-ZA-X6A" firstAttribute="leading" secondItem="bc4-9u-4Qt" secondAttribute="trailing" constant="15" id="fO9-Os-Y4X"/>
+                <constraint firstItem="woq-ZA-X6A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="jcT-jq-nqz"/>
+                <constraint firstItem="woq-ZA-X6A" firstAttribute="leading" secondItem="bc4-9u-4Qt" secondAttribute="trailing" constant="15" id="tPS-6W-lZB"/>
+                <constraint firstItem="woq-ZA-X6A" firstAttribute="top" secondItem="bc4-9u-4Qt" secondAttribute="top" id="vgh-2K-zxa"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bc4-9u-4Qt" secondAttribute="bottom" constant="15" id="wPQ-Vk-nya"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="157.24637681159422" y="-140.29017857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

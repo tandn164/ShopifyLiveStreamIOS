@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeVideoCollectionViewCell" customModule="YoutubeClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage2" translatesAutoresizingMaskIntoConstraints="NO" id="cDG-7o-Ko7">
+                        <rect key="frame" x="20" y="10" width="180" height="101.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="cDG-7o-Ko7" secondAttribute="height" multiplier="320:180" id="cwz-xr-hw2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(GTA V) Giang hồ bán xe và tập đoàn mua bán xe cũ." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0s-Rd-8p6">
+                        <rect key="frame" x="20" y="119.5" width="180" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.000.000 views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVb-gZ-10C">
+                        <rect key="frame" x="20" y="158" width="180" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-zy-WVa">
+                        <rect key="frame" x="160" y="15" width="35" height="21"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpv-e0-vCs">
+                                <rect key="frame" x="5" y="5" width="25" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rpv-e0-vCs" firstAttribute="leading" secondItem="gcW-zy-WVa" secondAttribute="leading" constant="5" id="4sd-p7-JPW"/>
+                            <constraint firstItem="Rpv-e0-vCs" firstAttribute="top" secondItem="gcW-zy-WVa" secondAttribute="top" constant="5" id="53I-uL-Eec"/>
+                            <constraint firstAttribute="trailing" secondItem="Rpv-e0-vCs" secondAttribute="trailing" constant="5" id="ZeG-6w-EDE"/>
+                            <constraint firstAttribute="bottom" secondItem="Rpv-e0-vCs" secondAttribute="bottom" constant="5" id="aFu-Pz-C6G"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="A0s-Rd-8p6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="649-wZ-WGD"/>
+                <constraint firstItem="gcW-zy-WVa" firstAttribute="top" secondItem="cDG-7o-Ko7" secondAttribute="top" constant="5" id="LeK-lK-q0m"/>
+                <constraint firstItem="cDG-7o-Ko7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Qgd-9C-Nv0"/>
+                <constraint firstItem="EVb-gZ-10C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Zm0-TQ-kxT"/>
+                <constraint firstAttribute="bottom" secondItem="EVb-gZ-10C" secondAttribute="bottom" constant="10" id="awS-EC-jji"/>
+                <constraint firstItem="cDG-7o-Ko7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="eqX-NL-epD"/>
+                <constraint firstItem="A0s-Rd-8p6" firstAttribute="top" secondItem="cDG-7o-Ko7" secondAttribute="bottom" constant="8" symbolic="YES" id="ft3-RO-UjU"/>
+                <constraint firstAttribute="trailing" secondItem="cDG-7o-Ko7" secondAttribute="trailing" id="m4E-3m-W2F"/>
+                <constraint firstItem="gcW-zy-WVa" firstAttribute="trailing" secondItem="cDG-7o-Ko7" secondAttribute="trailing" constant="-5" id="pmW-YC-Qck"/>
+                <constraint firstAttribute="trailing" secondItem="EVb-gZ-10C" secondAttribute="trailing" id="rtT-y2-dCh"/>
+                <constraint firstAttribute="trailing" secondItem="A0s-Rd-8p6" secondAttribute="trailing" id="v1L-HI-u63"/>
+            </constraints>
+            <size key="customSize" width="191" height="98"/>
+            <point key="canvasLocation" x="-263.768115942029" y="63.950892857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="testImage2" width="720" height="404"/>
+    </resources>
+</document>

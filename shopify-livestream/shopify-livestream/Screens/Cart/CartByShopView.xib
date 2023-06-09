@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartByShopView" customModule="shopify_livestream" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="NLU-GE-UtK"/>
+                <outlet property="shopName" destination="4p6-IN-WMC" id="a9J-zs-lOk"/>
+                <outlet property="stackView" destination="O7i-uH-mUI" id="1pb-L1-2ET"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="428"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwN-Z5-bcD">
+                    <rect key="frame" x="15" y="51" width="384" height="362"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="O7i-uH-mUI">
+                            <rect key="frame" x="10" y="10" width="364" height="342"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="O7i-uH-mUI" secondAttribute="trailing" constant="10" id="4kA-U2-RVZ"/>
+                        <constraint firstAttribute="bottom" secondItem="O7i-uH-mUI" secondAttribute="bottom" constant="10" id="L26-n6-i4d"/>
+                        <constraint firstItem="O7i-uH-mUI" firstAttribute="top" secondItem="fwN-Z5-bcD" secondAttribute="top" constant="10" id="a89-GX-hPd"/>
+                        <constraint firstItem="O7i-uH-mUI" firstAttribute="leading" secondItem="fwN-Z5-bcD" secondAttribute="leading" constant="10" id="ajO-4M-Un3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusX">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.1137254902" green="0.2784313725" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4p6-IN-WMC">
+                    <rect key="frame" x="15" y="15" width="384" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fwN-Z5-bcD" firstAttribute="top" secondItem="4p6-IN-WMC" secondAttribute="bottom" constant="15" id="BN6-uh-iKE"/>
+                <constraint firstItem="4p6-IN-WMC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="E8S-na-3SB"/>
+                <constraint firstItem="fwN-Z5-bcD" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-15" id="Gsf-Sx-Pdo"/>
+                <constraint firstItem="4p6-IN-WMC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="iEv-f7-SQa"/>
+                <constraint firstAttribute="trailing" secondItem="4p6-IN-WMC" secondAttribute="trailing" constant="15" id="jzS-lq-wRP"/>
+                <constraint firstItem="fwN-Z5-bcD" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-15" id="mek-6k-8vA"/>
+                <constraint firstItem="fwN-Z5-bcD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="riz-rn-CJr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-44.196428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

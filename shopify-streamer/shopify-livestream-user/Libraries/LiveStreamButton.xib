@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveStreamButton" customModule="shopify_livestream_user" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="sNw-Eg-ROA"/>
+                <outlet property="liveStreamLabel" destination="PPV-tW-kGE" id="obm-lD-kB3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oU0-uk-CkO">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+                    <connections>
+                        <action selector="onLiveClicked:" destination="-1" eventType="touchUpInside" id="6J7-Mf-VwP"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiH-Gf-IDf">
+                    <rect key="frame" x="60" y="0.0" width="80" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2V-pF-3v8">
+                            <rect key="frame" x="0.0" y="40" width="80" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="fm_#E4E4e4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uG0-qf-WDz">
+                            <rect key="frame" x="5" y="5" width="70" height="70"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create_video_icon" translatesAutoresizingMaskIntoConstraints="NO" id="qth-zG-0e8">
+                                    <rect key="frame" x="23" y="23" width="24" height="24"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.1450980392" green="0.24313725489999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="qth-zG-0e8" firstAttribute="centerY" secondItem="uG0-qf-WDz" secondAttribute="centerY" id="0TV-NT-VWP"/>
+                                <constraint firstAttribute="height" constant="70" id="3zt-9q-bt2"/>
+                                <constraint firstAttribute="width" secondItem="uG0-qf-WDz" secondAttribute="height" multiplier="1:1" id="QpF-sg-GTt"/>
+                                <constraint firstItem="qth-zG-0e8" firstAttribute="centerX" secondItem="uG0-qf-WDz" secondAttribute="centerX" id="qeb-yO-njV"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="35"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="M2V-pF-3v8" firstAttribute="height" secondItem="MiH-Gf-IDf" secondAttribute="height" multiplier="0.5" id="ByP-Jf-K7I"/>
+                        <constraint firstAttribute="trailing" secondItem="M2V-pF-3v8" secondAttribute="trailing" id="LCu-2h-JOP"/>
+                        <constraint firstItem="uG0-qf-WDz" firstAttribute="centerX" secondItem="MiH-Gf-IDf" secondAttribute="centerX" id="M1Y-rC-C69"/>
+                        <constraint firstItem="uG0-qf-WDz" firstAttribute="centerY" secondItem="MiH-Gf-IDf" secondAttribute="centerY" id="QBE-SA-Cw1"/>
+                        <constraint firstAttribute="bottom" secondItem="M2V-pF-3v8" secondAttribute="bottom" id="UeA-X2-IQ7"/>
+                        <constraint firstAttribute="width" constant="80" id="axq-EA-6Cw"/>
+                        <constraint firstAttribute="height" constant="80" id="duu-Nd-hEm"/>
+                        <constraint firstItem="M2V-pF-3v8" firstAttribute="leading" secondItem="MiH-Gf-IDf" secondAttribute="leading" id="znU-le-AaO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPV-tW-kGE">
+                    <rect key="frame" x="0.0" y="84" width="200" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="YhQ-4C-4m8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MiH-Gf-IDf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0cM-NR-CBP"/>
+                <constraint firstAttribute="bottom" secondItem="PPV-tW-kGE" secondAttribute="bottom" id="3IS-iU-Jxj"/>
+                <constraint firstAttribute="trailing" secondItem="oU0-uk-CkO" secondAttribute="trailing" id="IzD-Bt-CHk"/>
+                <constraint firstItem="MiH-Gf-IDf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NnQ-HD-aAu"/>
+                <constraint firstAttribute="bottom" secondItem="oU0-uk-CkO" secondAttribute="bottom" id="RMC-jA-lLt"/>
+                <constraint firstItem="oU0-uk-CkO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wwk-IX-BlV"/>
+                <constraint firstItem="PPV-tW-kGE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ahB-kk-Tyx"/>
+                <constraint firstAttribute="trailing" secondItem="PPV-tW-kGE" secondAttribute="trailing" id="lU9-DY-Q36"/>
+                <constraint firstItem="oU0-uk-CkO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wkK-Yy-vKi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-146.37681159420291" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="create_video_icon" width="24" height="24"/>
+        <namedColor name="fm_#E4E4e4">
+            <color red="0.89411764705882357" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

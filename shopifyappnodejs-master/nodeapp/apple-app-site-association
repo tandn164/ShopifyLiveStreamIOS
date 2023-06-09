@@ -1,0 +1,14 @@
+{
+    "applinks": {
+	    "apps": [],
+        "details": [
+            {
+                "appID": "38BU5VXKD8.com.tan.YoutubeClone",
+	            "paths": ["/deeplink/*"]
+            }
+        ]
+    },
+    "webcredentials": {
+        "apps": [ "38BU5VXKD8.com.tan.YoutubeClone" ]
+     }
+}

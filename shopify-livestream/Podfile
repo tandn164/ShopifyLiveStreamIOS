@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'shopify-livestream' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for shopify-livestream
+   pod 'AgoraRtcEngine_iOS'
+   pod 'Alamofire', '~> 5.1'
+   pod 'SDWebImage', '5.6.0'
+   pod 'SDWebImageSVGKitPlugin', '1.2.0'
+   pod 'IQKeyboardManagerSwift', '6.5.0'
+   pod 'PullToRefresher', '~> 3.1'
+   pod 'iCarousel'
+   pod 'EmptyDataSet-Swift', '~> 5.0.0'
+   pod 'MXSegmentedPager'
+   pod "Mobile-Buy-SDK"
+   pod 'Socket.IO-Client-Swift', '~> 15.1.0'
+   pod 'Kingfisher', '~> 5.0'
+   pod 'FirebaseAuth'
+   pod 'FirebaseFirestore'
+
+end
